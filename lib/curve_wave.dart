@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math show sin, pi;
 import 'package:flutter/animation.dart';
 
-class PulsateCurve extends Curve {
-  const PulsateCurve();
+class CurveWave extends Curve {
+  const CurveWave();
   @override
   double transform(double t) {
     if (t == 0 || t == 1) {

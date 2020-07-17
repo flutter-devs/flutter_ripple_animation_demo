@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/animation.dart';
 import 'package:rippledemo/circle_painter.dart';
-import 'package:rippledemo/pulsate_curve.dart';
+import 'package:rippledemo/curve_wave.dart';
 
 
 class RipplesAnimation extends StatefulWidget {
@@ -47,7 +47,7 @@ class _RipplesAnimationState extends State<RipplesAnimation> with TickerProvider
               scale: Tween(begin: 0.95, end: 1.0).animate(
                 CurvedAnimation(
                   parent: _controller,
-                  curve: const PulsateCurve(),
+                  curve: const CurveWave(),
                 ),
               ),
               child: Icon(Icons.speaker_phone, size: 44,)
